@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(243,243,243)
+}
+
+.dropdown-menu {
+    left: auto !important;
+    right: 0 !important;
+}
+
+.navbar {
+    background-color: rgb(20, 20, 20);
+}
+
+hr {
+    border: 1px solid grey;
+}

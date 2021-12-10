@@ -1,0 +1,80 @@
+body {
+  background-color: rgb(20, 20, 20) !important;
+}
+
+.container {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  width: 600px !important;
+}
+.student-name {
+  background-color: gray;
+}
+.drop-down-langmenu {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+hr {
+  background-color: gray;
+}
+
+.maturity {
+  background-color: rgb(68, 68, 68);
+  padding: 5px;
+  border-radius: 2px;
+  font-weight: 50;
+}
+.edit-button {
+  background-color: rgb(20, 20, 20);
+  padding-right: 55px;
+  padding-left: 55px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 50;
+  color: gray;
+  border: 1px solid gray;
+  display: inline-block;
+}
+
+.container-buttons {
+  position: absolute;
+  left: 0;
+}
+
+.custom-control-label::after {
+  background-color: rgb(20, 20, 20) !important;
+  border: 1px solid gray;
+  height: 30px !important;
+  width: 30px !important;
+}
+
+.custom-control-label::before {
+  background-color: rgb(20, 20, 20) !important;
+  border: 1px solid gray;
+  height: 30px !important;
+  width: 30px !important;
+}
+
+label.custom-control-label {
+  margin-top: 20px;
+  padding: 8px;
+}
+#parent-photo {
+  position: absolute;
+}
+
+#edit-icon {
+  background-color: black;
+  color: white;
+  position: relative;
+  bottom: -78px;
+  left: 0px;
+}
+
+.edit-button-only {
+  background-color: rgb(20, 20, 20);
+  color: gray;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid gray;
+}

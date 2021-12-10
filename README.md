@@ -1,5 +1,2 @@
-# netflix-ui
-
-
-
-[DEMO](http://ubeytdemir.me/netflix-ui/)
+# m2-d5
+ Netflix clone (team challenge)
