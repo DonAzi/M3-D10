@@ -14,24 +14,21 @@ const getMovies = async () => {
     }
   );
   let data = await fetchData.json();
-  //   console.log(data);
+  console.log("why im being ARRAY =>", data);
 
-  const row = document.querySelector("#row");
+  let row = document.getElementById("row");
   row.innerHTML = "";
   //
   data.forEach((movie) => {
     const col = `
-    <div class="img-wrap col-sm-6 col-md-4 col-lg-2 mb-1 pr-0">
+    <div class="col-sm-6 col-md-4 col-lg-2 mb-1 pr-0">
           <img
-            class="image-card img-fluid"
-            src="${url}"
+            class="img-fluid"
+            src="${movie.url}" alt="${movie.category}"
           />
+          <div><span>${movie.category}</span></div>
         </div>
         <div class="img-wrap col-sm-6 col-md-4 col-lg-2 mb-1 pr-0 pl-1">
-          <img
-            class="image-card img-fluid"
-            src="https://picsum.photos/200/120"
-          />
 </div>
             `;
     row.innerHTML += col;
@@ -40,10 +37,10 @@ const getMovies = async () => {
 // ====================================================================// ====================================================================
 const addMoive = async () => {
   let movies = {
-    name: document.querySelector("#name").value,
-    description: document.querySelector("#description").value,
-    category: document.querySelector("#category").value,
-    imageUrl: document.querySelector("#url").value,
+    name: document.getElementById("name").value,
+    description: document.getElementById("description").value,
+    category: document.getElementById("category").value,
+    imageUrl: document.getElementById("url").value,
   };
   let postData = await fetch(
     "https://striveschool-api.herokuapp.com/api/movies",
@@ -57,6 +54,8 @@ const addMoive = async () => {
       },
     }
   );
+  return postData.json();
+
   if (postData.ok) {
     alert("Movie is added sucessfully ");
   } else {
